@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.zephyr.zehyrota;
+package com.zephyr.zephyrota;
 
 import android.app.Fragment;
 import android.os.Bundle;
