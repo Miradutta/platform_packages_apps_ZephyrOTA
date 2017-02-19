@@ -18,7 +18,7 @@
 <resources>
 
     <!-- App -->
-    <string name="app_name">SlimOTA</string>
+    <string name="app_name">ZephyrOTA</string>
     <string name="app_title">System updates</string>
 
     <!-- Categories -->

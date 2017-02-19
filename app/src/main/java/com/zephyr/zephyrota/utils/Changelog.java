@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.fusionjack.slimota.utils;
+package com.zephyr.zephyrota.utils;
 
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.fusionjack.slimota.R;
+import com.zephyr.zephyrota.R;
 
 import java.io.File;
 import java.io.FileNotFoundException;

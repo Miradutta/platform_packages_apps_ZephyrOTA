@@ -14,31 +14,31 @@
  * limitations under the License.
  */
 
-package com.fusionjack.slimota;
+package com.zephyr.zehyrota;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
 
-import com.fusionjack.slimota.configs.LinkConfig;
-import com.fusionjack.slimota.dialogs.WaitDialogFragment;
-import com.fusionjack.slimota.fragments.SlimOTAFragment;
+import com.zephyr.zephyrota.configs.LinkConfig;
+import com.zephyr.zephyrota.dialogs.WaitDialogFragment;
+import com.zephyr.zephyrota.fragments.ZephyrOTAFragment;
 
 public class MainActivity extends PreferenceActivity implements
         WaitDialogFragment.OTADialogListener, LinkConfig.LinkConfigListener {
 
-    private static final String FRAGMENT_TAG = SlimOTAFragment.class.getName();
-    private SlimOTAFragment mFragment;
+    private static final String FRAGMENT_TAG = ZephyrOTAFragment.class.getName();
+    private ZephyrOTAFragment mFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mFragment = (SlimOTAFragment) getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
+        mFragment = (ZephyrOTAFragment) getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
         if (mFragment == null) {
             getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, new SlimOTAFragment(), FRAGMENT_TAG)
+                    .replace(android.R.id.content, new ZephyrOTAFragment(), FRAGMENT_TAG)
                     .commit();
         }
 
@@ -47,7 +47,7 @@ public class MainActivity extends PreferenceActivity implements
 
     @Override
     protected boolean isValidFragment(String fragmentName) {
-        return SlimOTAFragment.class.getName().equalsIgnoreCase(fragmentName);
+        return ZephyrOTAFragment.class.getName().equalsIgnoreCase(fragmentName);
     }
 
     @Override

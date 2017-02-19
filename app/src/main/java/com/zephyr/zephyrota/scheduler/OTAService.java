@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package com.fusionjack.slimota.scheduler;
+package com.zephyr.zephyrota.scheduler;
 
 import android.content.Intent;
 import android.os.AsyncTask;
 
 import com.commonsware.cwac.wakeful.WakefulIntentService;
-import com.fusionjack.slimota.tasks.CheckUpdateTask;
+import com.zephyr.zephyrota.tasks.CheckUpdateTask;
 
 public class OTAService extends WakefulIntentService {
 
     public OTAService() {
-        super("SlimOTA");
+        super("ZephyrOTA");
     }
 
     @Override
